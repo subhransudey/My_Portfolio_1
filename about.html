@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Subhransu</title>
+    <link rel="stylesheet" href="style-about.css">
+    <link rel="icon" type="image/x-icon" href="Subhransu_logo_dark.ico">
+    <script src="https://kit.fontawesome.com/b0f8bf0c37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img class="logo " src="Subhransu_logo_light.png" id="logo" alt="logo"></a>
+                <ul id="sidemenu">
+                    <li>
+                        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
+                    </li>
+                    <li>
+                        <a href="research.html"><i class="fa-solid fa-magnifying-glass"></i>Research Work</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+                    </li>
+                    <li><img src="moon.png" id="icon"></li>
+                    <i class="fas fa-times 2xl" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <h1>Welcome Back !</h1>
+                <p>I am <span>Subhransu Dey,</span>  an enthusiastic IPhD Student at <a href="https://bose.res.in">S.N. Bose National Center for Basic Sciences.</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="lists">
+                <div class="tab-title">
+                    <h1 class="tab-links active-link education" onclick="opentab('education')">Education</h1>
+                    <h1 class="tab-links exam-qualified" onclick="opentab('exam')">Exam Qualified</h1>
+                    <h1 class="tab-links skills" onclick="opentab('skills')">Skills</h1>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><h1><i class="fa-solid fa-graduation-cap"></i><span>S.N. Bose National Center for Basic Sciences (SNBNCBS)</span></h1></li>
+                                <li><p>Master of Science (M.Sc.) in Physics</p></li>
+                                <li><p>CGPA / Percentage : Appearing</p></li>
+                                <li><p>School Year : 2023 - Present</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><h1><i class="fa-solid fa-graduation-cap"></i><span>Serampore College (University of Calcutta)</span></h1></li>
+                                <li><p>Bachelor of Science (Hons) (B.Sc. (Hons))</p></li>
+                                <li><p>CGPA / Percentage : 8.160/10</p></li>
+                                <li><p>School Year : 2020 - 2023</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><h1><i class="fa-solid fa-graduation-cap"></i><span>Belur High School</span></h1></li>
+                                <li><p>Higher Secondary Education (H.S.)</p></li>
+                                <li>CGPA / Percentage : 87.80%</li>
+                                <li><p>School Year : 2018-2020</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><h1><i class="fa-solid fa-graduation-cap"></i><span>Patha Bhavan Dankuni</span></h1></li>
+                                <li><p>Madhyamik (Secondary Education)</p></li>
+                                <li>CGPA / Percentage : 84.85%</li>
+                                <li><p>School Year : 2005-2018</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exam">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><h1><span>IIT - JAM, Physics  2023</span></h1></li>
+                                <li><p>ALL INDIA RANK  : 103</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><h1><span>JEST, Physics - 2023</span></h1></li>
+                                <li>ALL INDIA RANK : 57</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><h1><span>IACS MPST, Physics 2023</span></h1></li>
+                                <li><p>ALL INDIA RANK : 20</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><div class=" progress python" style="--i:75;--clr:#43f94a;"> 
+                            <h2>Python</h2>
+                            <h3>Advanced</h3>
+                            
+                            
+                        </div></li>
+                        <li><div class=" progress latex" style="--i:75;--clr:#2ccde9;">
+                            <h2>LaTeX</h2>
+                            <h3>Advanced</h3>
+                            
+                        </div></li>
+                        <li><div class="progress Css" style="--i:75;--clr:#ffe047;">
+                            <h2>Microsoft Office</h2>
+                            <h3>Advanced</h3>
+                        </div></li>
+                        <li><div class="progress Html" style="--i:50;--clr:#fb297b;">
+                            <h2>HTML</h2>
+                            <h3>Intermediate</h3>
+                        </div></li>
+                        <li><div class="progress Css" style="--i:50;--clr:#ffe047;">
+                            <h2>CSS</h2>
+                            <h3>Intermediate</h3>
+                        </div></li>
+                        <li><div class=" progress js"style="--i:25;--clr:#43f94a;" > 
+                            <h2>JavaScript</h2>
+                            <h3>Basic</h3>
+                            
+                            
+                        </div></li>
+                        <li><div class="progress Html" style="--i:25;--clr:#fb297b;">
+                            <h2>Origin</h2>
+                            <h3>Basic</h3>
+                        </div></li>
+                        <li><div class=" progress latex" style="--i:25;--clr:#2ccde9;">
+                            <h2>Arduino</h2>
+                            <h3>Basic</h3>
+                            
+                        </div></li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="certifications"> 
+                <h1>Certificate</h1>
+                <hr>
+                <div class="certificate-list" id = "certificate">
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Python (Basic) Certificate</h2>
+                            <span>HackerRank</span>
+                            <p>Grade Recieved : N/A</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate1">
+                        <ul>
+                            <li>Issuing Organization : HackerRank</li>
+                            <li>Issue Date : July 2023</li>
+                            <li>Credential ID : 5C25B22D2121</li>
+                            <li>Credential URL : <a href="https://www.hackerrank.com/certificates/5c25b22d2121">https://www.hackerrank.com/certificates/5c25b22d2121</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate1" id="MoreDetails1" onclick="toggledetails('certificate1','MoreDetails1','updown1')">See More </a>
+                        <i class="fa-solid fa-arrow-down " id="updown1" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Interactivity with JavaScript</h2>
+                            <span>University of Michigan
+                            </span>
+                            <p>Grade Recieved : 98.66%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate2">
+                        <ul>
+                            <li>Issuing Organization : Coursera</li>
+                            <li>Issue Date : April 2023</li>
+                            <li>Credential ID : TCSE3WHJ2B28</li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/TCSE3WHJ2B28">https://www.coursera.org/account/accomplishments/certificate/TCSE3WHJ2B28</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate2" id="MoreDetails2" onclick="toggledetails('certificate2','MoreDetails2','updown2')">See More </a><i class="fa-solid fa-arrow-down " id="updown2" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Introduction to CSS3</h2>
+                            <span>University of Michigan
+                            </span>
+                            <p>Grade Recieved : 100%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate3">
+                        <ul>
+                            <li>Issuing Organization : Coursera</li>
+                            <li>Issue Date : April 2023</li>
+                            <li>Credential ID : 83Q9F5B6BR8V</li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/83Q9F5B6BR8V">https://www.coursera.org/account/accomplishments/certificate/83Q9F5B6BR8V</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate3" id="MoreDetails3" onclick="toggledetails('certificate3','MoreDetails3','updown3')">See More </a><i class="fa-solid fa-arrow-down " id="updown3" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Introduction to HTML5</h2>
+                            <span>University of Michigan
+                            </span>
+                            <p>Grade Recieved : 98.83%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate4">
+                        <ul>
+                            <li>Issuing Organization : Coursera</li>
+                            <li>Issue Date : April 2023</li>
+                            <li>Credential ID : DG425HP9J6V2
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/DG425HP9J6V2">https://www.coursera.org/account/accomplishments/certificate/DG425HP9J6V2</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate4" id="MoreDetails4" onclick="toggledetails('certificate4','MoreDetails4','updown4')">See More </a><i class="fa-solid fa-arrow-down " id="updown4" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Introduction to Mathematical Thinking
+                            </h2>
+                            <span>Stanford University
+                            </span>
+                            <p>Grade Recieved : 99.43%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate5">
+                        <ul>
+                            <li>Issuing Organization : Coursera</li>
+                            <li>Issue Date : March 2023</li>
+                            <li>Credential ID : JJRWY8VHEN3Z
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/JJRWY8VHEN3Z">https://www.coursera.org/account/accomplishments/certificate/JJRWY8VHEN3Z</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate5" id="MoreDetails5" onclick="toggledetails('certificate5','MoreDetails5','updown5')">See More </a><i class="fa-solid fa-arrow-down " id="updown5" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Google Analytics
+                            </h2>
+                            <span>Great Learning
+                            </span>
+                            <p>Grade Recieved : N/A</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate6">
+                        <ul>
+                            <li>Issuing Organization : Great Learning </li>
+                            <li>Issue Date : December 2022</li>
+                            </li>
+                            <li>Credential URL : <a href="verify.mygreatlearning.com/OLGWIAJQ">verify.mygreatlearning.com/OLGWIAJQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate6" id="MoreDetails6" onclick="toggledetails('certificate6','MoreDetails6','updown6')">See More </a><i class="fa-solid fa-arrow-down " id="updown6" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Game development using PyGame
+                            </h2>
+                            <span>GUVI Geek Networks, IITM Research Park
+                            </span>
+                            <p>Grade Recieved : N/A</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate7">
+                        <ul>
+                            <li>Issuing Organization : GUVI Geek Networks, IITM Research Park </li>
+                            <li>Issue Date : November 2022</li>
+                            </li>
+                            <li>
+                                Credential ID: m516M28068R1U77gp6
+                            </li>
+                            <li>Credential URL : <a href="https://www.guvi.com/verify-certificate?id=m516M28068R1U77gp6&course=pygame_english">https://www.guvi.com/verify-certificate?id=m516M28068R1U77gp6&course=pygame_english</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate7" id="MoreDetails7" onclick="toggledetails('certificate7','MoreDetails7','updown7')">See More </a><i class="fa-solid fa-arrow-down " id="updown7" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Learn the basics of web - Internet fundamentals Certificate
+                            </h2>
+                            <span>Codedamn
+                            </span>
+                            <p>Grade Recieved : N/A</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate8">
+                        <ul>
+                            <li>Issuing Organization : Codedamn </li>
+                            <li>Issue Date : November 2022</li>
+                            </li>
+                            <li>Credential URL : <a href="https://codedamn.com/certificate/verify/4fbfd708266921f33d695a3c06e8cf29ced6b34b">https://codedamn.com/certificate/verify/4fbfd708266921f33d695a3c06e8cf29ced6b34b</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate6" id="MoreDetails8" onclick="toggledetails('certificate8','MoreDetails8','updown8')">See More </a><i class="fa-solid fa-arrow-down " id="updown8" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>The Arduino Platform and C Programming
+                            </h2>
+                            <span>University of California, Irvine
+                            </span>
+                            <p>Grade Recieved : 99.73%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate9">
+                        <ul>
+                            <li>Issuing Organization : Coursera </li>
+                            <li>Issue Date : May 2022</li>
+                            </li>
+                            <li>
+                                Credential ID : 9EC3CW43CVNS
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/9EC3CW43CVNS">https://www.coursera.org/account/accomplishments/certificate/9EC3CW43CVNS</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate9" id="MoreDetails9" onclick="toggledetails('certificate9','MoreDetails9','updown9')">See More </a><i class="fa-solid fa-arrow-down " id="updown9" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Technical Support Fundamentals
+                            </h2>
+                            <span>Google
+                            </span>
+                            <p>Grade Recieved : 98.75%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate10">
+                        <ul>
+                            <li>Issuing Organization : Coursera </li>
+                            <li>Issue Date : April 2022</li>
+                            </li>
+                            <li>
+                                Credential ID : RDXKQUF5RMW8
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/RDXKQUF5RMW8">https://www.coursera.org/account/accomplishments/certificate/RDXKQUF5RMW8</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate10" id="MoreDetails10" onclick="toggledetails('certificate10','MoreDetails10','updown10')">See More </a><i class="fa-solid fa-arrow-down " id="updown10" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Mathematics for Machine Learning: Linear Algebra
+                            </h2>
+                            <span>Imperial College London
+                            </span>
+                            <p>Grade Recieved : 98%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate11">
+                        <ul>
+                            <li>Issuing Organization : Coursera </li>
+                            <li>Issue Date : November 2021</li>
+                            </li>
+                            <li>
+                                Credential ID : 4H7RX44NBNGQ
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/4H7RX44NBNGQ">https://www.coursera.org/account/accomplishments/certificate/4H7RX44NBNGQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate11" id="MoreDetails11" onclick="toggledetails('certificate11','MoreDetails11','updown11')">See More </a><i class="fa-solid fa-arrow-down " id="updown11" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Classical Mechanics - 1
+                            </h2>
+                            <span>Indian Institute of Technology, Kanpur 
+                            </span>
+                            <p>Grade Recieved : Very Good </p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate12">
+                        <ul>
+                            <li>Issuing Organization : Centre For Continuing Education IIT Kanpur </li>
+                            <li>Issue Date : April 2021</li>
+                            </li>
+                            <li>Credential URL : <a href="https://bsc.hcverma.in/sites/default/files//cm1/certificates/6086a32fbc8ce64313447a69.pdf">https://bsc.hcverma.in/sites/default/files//cm1/certificates/6086a32fbc8ce64313447a69.pdf</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate12" id="MoreDetails12" onclick="toggledetails('certificate12','MoreDetails12','updown12')">See More </a><i class="fa-solid fa-arrow-down " id="updown12" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Introduction to Computers and Office Productivity Software
+                            </h2>
+                            <span>The Hong Kong University of Science and Technology
+                            </span>
+                            <p>Grade Recieved : 98%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate13">
+                        <ul>
+                            <li>Issuing Organization : Coursera </li>
+                            <li>Issue Date : April 2021</li>
+                            </li>
+                            <li>
+                                Credential ID: F8QL7FB8KFXD
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/F8QL7FB8KFXD">https://www.coursera.org/account/accomplishments/certificate/F8QL7FB8KFXD</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate13" id="MoreDetails13" onclick="toggledetails('certificate13','MoreDetails13','updown13')">See More </a><i class="fa-solid fa-arrow-down " id="updown13" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Python Basics
+                            </h2>
+                            <span>University of Michigan
+                            </span>
+                            <p>Grade Recieved : 100%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate14">
+                        <ul>
+                            <li>Issuing Organization : Coursera </li>
+                            <li>Issue Date : February 2021</li>
+                            </li>
+                            <li>
+                                Credential ID: DN7PY3CSLDSY
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/DN7PY3CSLDSY">https://www.coursera.org/account/accomplishments/certificate/DN7PY3CSLDSY</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate14" id="MoreDetails14" onclick="toggledetails('certificate14','MoreDetails14','updown14')">See More </a><i class="fa-solid fa-arrow-down " id="updown14" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Programming for Everybody (Getting Started with Python)
+                            </h2>
+                            <span>University of Michigan
+                            </span>
+                            <p>Grade Recieved : 100%</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate15">
+                        <ul>
+                            <li>Issuing Organization : Coursera </li>
+                            <li>Issue Date : January 2021</li>
+                            </li>
+                            <li>
+                                Credential ID: MMXRHKQN3FG2
+                            </li>
+                            <li>Credential URL : <a href="https://www.coursera.org/account/accomplishments/certificate/MMXRHKQN3FG2">https://www.coursera.org/account/accomplishments/certificate/MMXRHKQN3FG2</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate15" id="MoreDetails15" onclick="toggledetails('certificate15','MoreDetails15','updown15')">See More </a><i class="fa-solid fa-arrow-down " id="updown15" ></i>
+                    </div>
+                    <div class="horizontal">
+                        <div class="card">
+                            <img src="/certificate-removebg-preview.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2>Classical Electromagnetism - 1 (Electrostatics)
+                            </h2>
+                            <span>Indian Institute of Technology, Kanpur
+                            </span>
+                            <p>Grade Recieved : Very Good</p>
+                        </div>
+                    </div>
+                    <div class="details hidden " id="certificate16">
+                        <ul>
+                            <li>Issuing Organization : Centre For Continuing Education IIT Kanpur </li>
+                            <li>Issue Date : January 2021</li>
+                            </li>
+                            <li>Credential URL : <a href="https://bsc.hcverma.in/sites/default/files//cee1/certificates/5fdd9ec1bc8ce660d22849a0.pdf">https://bsc.hcverma.in/sites/default/files//cee1/certificates/5fdd9ec1bc8ce660d22849a0.pdf</a></li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="#certificate16" id="MoreDetails16" onclick="toggledetails('certificate16','MoreDetails16','updown16')">See More </a><i class="fa-solid fa-arrow-down " id="updown16" ></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------footer ----------------------- -->
+    <div id="footer">
+        <div class="container">
+           <p>Copyright <a href="index.html">@ Subhransu Dey</a></p>
+           <div class="social-icons">
+            <div class="mail icon">
+                <div class="icon-name">Email</div>
+                <a href="mailto:subhransudey2002@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="facebook icon">
+                <div class="icon-name">Facebook</div>
+                <a href="https://www.facebook.com/profile.php?id=100027252841976" target="_blank"><i class="fab fa-solid fa-facebook-f"></i></a>
+            </div>
+            <div class="twitter icon">
+                <div class="icon-name">X/Twitter</div>
+                <a href="https://twitter.com/subhransu_dey" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="github icon">
+                <div class="icon-name">Github</div>
+                <a href="https://github.com/subhransudey" target="_blank"><i class="fab fa-solid fa-github"></i></a>
+            </div>
+            <div class="linkedin icon">
+                <div class="icon-name">Linkedin</div>
+                <a href="https://www.linkedin.com/in/subhransu-dey-416aa7185/" target="_blank"><i class="fab fa-solid fa-linkedin"></i></a>
+            </div>
+        </div>
+            <p>Designed by <a href="index.html">Subhransu Dey</a></p>
+        </div>
+    </div>
+</body>
+<script src="myscript.js"></script>
+</html>

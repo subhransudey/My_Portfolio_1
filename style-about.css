@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppnis','Sans-Serif';
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #fff;
+    --secondary-color: #080808;
+    --third-color: #d0d3d9;
+    --fourth-color: #ff004f;
+    }
+body.dark-theme {
+    --primary-color: #080808;
+    --secondary-color: #fff;
+    --third-color: #373738;
+    --fourth-color: #f0bb29;
+    
+}
+body.light-theme{
+    --primary-color: #fff;
+    --secondary-color: #080808;
+    --third-color: #d0d3d9;
+    --fourth-color: #ff004f;
+}
+       
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/* -------------------- header ------------------------------ */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(user-removed.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo{
+    width: 75px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li .fa-solid{
+    margin-right: 15px;
+}
+nav ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+}
+nav ul li a::after{
+    content:'' ;
+    width: 0%;
+    height: 5px;
+    border-radius: 15px;
+    background-color: var(--fourth-color);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 1s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.active{
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    color: var(--fourth-color);
+}
+
+.header-text{
+    margin-top: 12%;
+    font-size: 40px;
+
+}
+nav img{
+    width: 25px;
+    margin-right: 75px;
+    cursor: pointer;
+}
+.header-text{
+    margin-top: 10%;
+    margin-left: 40%;
+}
+.header-text h1{
+    margin-bottom: 10px;
+}
+.header-text p span{
+    color: var(--fourth-color);
+}
+.header-text p a{
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
+.header-text p a:hover{
+    color: var(--fourth-color);
+}
+/* ---------------------about me------------------- */
+
+.lists{
+    margin-top: 20px;
+    background-color: var(--primary-color); 
+}
+.lists h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--fourth-color);
+}
+.lists hr{
+    
+    height: 5px;
+    background-color: var(--secondary-color);
+}
+.tab-title{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.tab-title h1{
+    color: var(--secondary-color);
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    
+}
+.tab-links::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    border-radius: 15px;
+    background: var(--fourth-color);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 1s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 15px 5px;
+    font-size: 18px;
+}
+
+.tab-contents ul li span{
+    color: var(--fourth-color);
+    font-size: 22px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#education ul li ul li h1 i{
+    margin-right: 15px;
+}
+#education ul li ul li{
+    margin-left: 85px;
+}
+#education ul li ul li:nth-child(1){
+    margin-left: 0px;
+}
+#exam ul li ul li{
+    margin-left: 35px;
+}
+#exam ul li ul li:nth-child(1){
+    margin-left: 0px;
+}
+.certifications{
+    margin-top: 20px;
+}
+.certifications h1{
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.certifications hr{
+    height: 5px;
+    background-color: var(--fourth-color);
+}
+.horizontal{
+    display: flex;
+}
+.card img{
+    width: 50px;
+}
+.hidden{
+    display: none;
+}
+.certifications{
+    margin-top: 40px ;
+}
+.certificate-list{
+    margin-top: 20px;
+}
+.horizontal{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.details ul li{
+    list-style: none;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.details ul li a{
+    text-decoration: none;
+}
+.details ul li a:hover{
+    color: var(--fourth-color);
+}
+.card-content{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.card-content h2{
+    color: var(--fourth-color);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.card-content span{
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+.card-content p{
+    margin-top: 10px;
+}
+
+.more{
+    margin-left: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.more i{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.more a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: var(--secondary-color)
+}
+
+.more a:hover{
+    color: var(--fourth-color);
+   
+}
+#skills {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+#skills ul{
+    display: flex;
+    flex-wrap: wrap ;
+    
+}
+#skills  ul li{
+    margin-right: 35px;
+}
+
+.progress {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.5em;
+    background: var(--secondary-color) linear-gradient(to right, transparent , var(--clr) 0);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.1),
+                -6px -6px 10px -1px rgba(0, 0, 0, 0.4),
+                0px 10px 20px 0px rgba(0, 0, 0, 0.8);
+    transition: transform 0.5s;
+}
+
+.progress h3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 1.5em;
+}
+
+.progress h2 {
+    position: absolute;
+    top: 25%;
+    left: 48%;
+    transform: translate(-50%, -25%);
+    color: var(--clr);
+    z-index: 2;
+    font-size: 1.5em;
+}
+
+.progress::before {
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.progress::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background: var(--primary-color);
+
+}
+
+/* ---------------------footer------------------------ */
+
+#footer {
+    background-color: var(--third-color);
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+#footer p a {
+    color: var(--fourth-color);
+}
+
+.social-icons{
+    display: inline-flex;
+    margin-top: 70px;
+    margin-left: 28%;
+
+}
+.social-icons .icon{
+    margin: 0 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.social-icons .icon a{
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.social-icons .icon a i{
+    font-size: 25px;
+    line-height: 50px;
+    position: relative;
+    color: black;
+}
+.social-icons .icon .icon-name{
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.6, -0.5,0.25,1.5);
+    
+}
+.social-icons .icon:hover .icon-name{
+    opacity: 1;
+    top: -60px;
+    pointer-events: auto;
+   
+}
+.social-icons .icon .icon-name::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.social-icons .icon:hover a i,
+.social-icons .icon:hover .icon-name{
+    color: #fff;
+    font-weight: 400;
+}
+.social-icons .facebook:hover a,
+.social-icons .facebook:hover .icon-name,
+.social-icons .facebook:hover .icon-name::before{
+    background: #3b5998;
+}
+.social-icons .mail:hover a,
+.social-icons .mail:hover .icon-name,
+.social-icons .mail:hover .icon-name::before{
+    background: #c71610;
+}
+.social-icons .twitter:hover a,
+.social-icons .twitter:hover .icon-name,
+.social-icons .twitter:hover .icon-name::before{
+    background: #000;
+}
+.social-icons .github:hover a,
+.social-icons .github:hover .icon-name,
+.social-icons .github:hover .icon-name::before{
+    background: #333;
+}
+.social-icons .linkedin:hover a,
+.social-icons .linkedin:hover .icon-name,
+.social-icons .linkedin:hover .icon-name::before{
+    background: #0077b5;
+}
+
+#footer p:last-child {
+    margin-left: 75%;
+    margin-bottom: 30px;
+
+}
+/* -------------------------- Mobile Version -------------------------------- */
+
+nav .fas {
+    display: none;
+}
+@media only screen and (max-width:500px) {
+    .header-text {
+        font-size: 15px;
+        margin-top: 100%;
+
+    }
+
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background-color: var(--fourth-color);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 1s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 30px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .active{
+        color: var(--secondary-color);
+    }
+    .header-text h1{
+        margin-top: -300px;
+        margin-left: -40px;
+    }
+    .header-text p{
+        margin-top: 600px;
+        margin-left: -140px;
+        line-height: 25px;
+        font-weight: 600;
+    }
+    .lists{
+        width: 80%;
+        margin-left: 45px;
+    }
+    .subtitle {
+        font-size: 45px;
+    }
+    
+    .tab-title h1{
+        font-size: 20px;
+    }
+    #footer {
+        font-size: 15px;
+    }
+
+    .social-icons {
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-bottom: 60px;
+
+    }
+    .social-icons .icon a{
+        height: 40px;
+        width: 40px;
+    }
+    .social-icons .icon a i{
+        line-height: 40px;
+    }
+
+    #footer p:last-child {
+        margin-left: 42%;
+    }
+    #education ul li ul li{
+        margin-left: 35px ;
+    }
+    #education ul li{
+        margin-left: -10px;
+    }
+    #skills ul li {
+       
+    }
+    #skills ul li{
+        margin-left: 15px;
+    }
+    
+    
+    
+}
